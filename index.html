@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="BookTracker — персональная библиотека книг. Собирайте список чтения, отмечайте прогресс и находите следующую книгу.">
+  <title>BookTracker — ваша история чтения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="BookTracker — на главную">
+        <span class="brand-mark" aria-hidden="true">b<span>.</span></span>
+        <span>BookTracker</span>
+      </a>
+      <nav class="main-nav" aria-label="Главная навигация">
+        <a href="#features">Возможности</a>
+        <a href="#how-it-works">Как это работает</a>
+        <a href="#screens">Экраны</a>
+      </nav>
+      <a class="button button-small nav-cta" href="#demo">Попробовать демо <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+      <a href="#features">Возможности</a>
+      <a href="#how-it-works">Как это работает</a>
+      <a href="#screens">Экраны</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad">
+      <div class="container hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Ваша библиотека. Ваша история.</div>
+        <h1>Каждая книга<br>найдёт <em>своё место.</em></h1>
+        <p class="hero-lead">Соберите все книги в одной личной библиотеке. Следите за чтением, сохраняйте впечатления. И ничего не потеряется :D</p>
+        <div class="hero-actions">
+          <a class="button" href="#demo">Открыть демо <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#features">Узнать о возможностях <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note">
+          <div class="avatar-stack" aria-hidden="true"><span>А</span><span>М</span><span>И</span></div>
+          <p><strong>Для тех, кто любит читать</strong><br><span>От первого списка до личной коллекции</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem-section section-pad">
+      <div class="container problem-grid">
+        <div class="section-kicker">01 / ЗАЧЕМ BOOKTRACKER</div>
+        <div>
+          <h2 class="section-title">Книги повсюду.<br><em>но порядок в BookTracker.</em></h2>
+          <p class="section-description">В заметках — список того, что читали/хочется прочитать, на разных сайтах книги: их жанр, описание... BookTracker это способ удобно организовать собственную библиотеку и отслеживать состояние каждой книги.</p>
+        </div>
+        <div class="problem-stats">
+          <div class="stat-item"><span class="stat-icon">↗</span><strong>Один список</strong><span>вместо разрозненных заметок</span></div>
+          <div class="stat-item"><span class="stat-icon">◷</span><strong>Понятный прогресс</strong><span>видно, что читается сейчас</span></div>
+          <div class="stat-item"><span class="stat-icon">✦</span><strong>Личная история</strong><span>оценки и прочитанные книги</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section section-pad" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">02 / ВОЗМОЖНОСТИ</div>
+          <div><h2 class="section-title">Всё, что нужно<br><em>для вашей библиотеки.</em></h2><p class="section-description">Никакой лишней сложности — только инструменты, которые помогают читать с удовольствием и не терять нить.</p></div>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large">
+            <div class="feature-visual search-visual">
+              <div class="search-bar-visual"><span>⌕</span> Найти книгу или автора <kbd>⌘ K</kbd></div>
+              <div class="search-result"><div class="tiny-cover cover-blue"></div><div><b>Маленькая жизнь</b><small>Ханья Янагихара</small></div><span>→</span></div>
+              <div class="search-result"><div class="tiny-cover cover-ochre"></div><div><b>Город и звёзды</b><small>Артур Кларк</small></div><span>→</span></div>
+            </div>
+            <div class="feature-copy"><span class="feature-number">01</span><h3>Находите нужное</h3><p>Ищите книги по названию и автору. Фильтруйте коллекцию по жанру, году и другим параметрам.</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-visual status-visual">
+              <span class="status status-want">Хочу прочитать</span>
+              <span class="status status-reading">Читаю</span>
+              <span class="status status-done">Прочитано</span>
+              <div class="status-connector"></div>
+            </div>
+            <div class="feature-copy"><span class="feature-number">02</span><h3>Отмечайте этапы</h3><p>У каждой книги свой статус. Переводите её из списка желаний в чтение, а затем — в прочитанное.</p></div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-visual rating-visual">
+              <div class="rating-book"><div class="cover cover-green"><span>GARDEN<br>OF WORDS</span></div><div><b>Сад слов</b><small>Ваша оценка</small><div class="stars" aria-label="Оценка пять из пяти">★★★★★</div></div></div>
+              <div class="rating-caption">Запомните, что понравилось</div>
+            </div>
+            <div class="feature-copy"><span class="feature-number">03</span><h3>Сохраняйте впечатления</h3><p>Ставьте личные оценки и возвращайтесь к книгам, которые хочется перечитать или посоветовать.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow-section section-pad" id="how-it-works">
+      <div class="container workflow-grid">
+        <div>
+          <div class="section-kicker">03 / ПРОСТОЙ ПУТЬ</div>
+          <h2 class="section-title">Узнал, нашел, <br>к <em>прочитал</em></h2>
+          <p class="section-description">BookTracker сопровождает книгу на каждом этапе.</p>
+          <a class="button button-dark" href="#demo">Посмотреть пример <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-index">01</span><div><h3>Найдите книгу</h3><p>Введите название или автора и откройте карточку с информацией о книге.</p></div><span class="step-symbol">⌕</span></article>
+          <article class="step"><span class="step-index">02</span><div><h3>Добавьте в библиотеку</h3><p>Выберите статус — пусть книга займёт своё место в вашем списке.</p></div><span class="step-symbol">＋</span></article>
+          <article class="step"><span class="step-index">03</span><div><h3>Отмечайте прочитанное</h3><p>Меняйте статус и ставьте оценку, чтобы сохранить свою историю чтения.</p></div><span class="step-symbol">★</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== Экраны приложения ==== -->
+    <section class="screens-section section-pad" id="screens">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">04 / ЭКРАНЫ ПРИЛОЖЕНИЯ</div>
+          <div>
+            <h2 class="section-title">Так выглядит<br><em>BookTracker.</em></h2>
+            <p class="section-description">Поиск с фильтрами и подробная страница книги — два экрана, на которых держится весь пользовательский путь.</p>
+          </div>
+        </div>
+
+        <div class="screens-grid">
+          <!-- Экран 01: Главная / поиск -->
+          <article class="screen-card">
+            <div class="screen-frame">
+              <div class="screen-bar">
+                <span></span><span></span><span></span>
+                <span class="screen-url">booktracker.app / поиск</span>
+              </div>
+              <div class="screen-body">
+                <div class="screen-nav">
+                  <span class="brand-mark" aria-hidden="true">b<span>.</span></span>
+                  <span class="screen-nav-title">Поиск книг</span>
+                  <span class="screen-nav-link">Моя библиотека →</span>
+                </div>
+
+                <h3 class="screen-heading">Найдите следующую<br>любимую книгу.</h3>
+
+                <div class="screen-search">
+                  <span aria-hidden="true">⌕</span>
+                  <span>Название или автор...</span>
+                  <kbd>Enter</kbd>
+                </div>
+
+                <div class="screen-filters">
+                  <span class="screen-filter active">Все жанры</span>
+                  <span class="screen-filter">Роман</span>
+                  <span class="screen-filter">Фантастика</span>
+                  <span class="screen-filter">2020-е</span>
+                  <span class="screen-sort">↓ По популярности</span>
+                </div>
+
+                <div class="screen-book-grid">
+                  <div class="screen-book-card">
+                    <div class="cover cover-blue"><span>СИНЯЯ<br>ПОРА</span></div>
+                    <div class="screen-book-meta"><strong>Синяя пора</strong><small>Элис Хантер</small></div>
+                  </div>
+                  <div class="screen-book-card">
+                    <div class="cover cover-ochre"><span>ТИХИЙ<br>ГОРОД</span></div>
+                    <div class="screen-book-meta"><strong>Тихий город</strong><small>Марк Леви</small></div>
+                  </div>
+                  <div class="screen-book-card">
+                    <div class="cover cover-green"><span>САД<br>СЛОВ</span></div>
+                    <div class="screen-book-meta"><strong>Сад слов</strong><small>Нацуки Каваи</small></div>
+                  </div>
+                  <div class="screen-book-card">
+                    <div class="cover cover-plum"><span>ДАЛЬНИЙ<br>БЕРЕГ</span></div>
+                    <div class="screen-book-meta"><strong>Дальний берег</strong><small>Анна Рид</small></div>
+                  </div>
+                  <div class="screen-book-card">
+                    <div class="cover cover-sand"><span>ПИСЬМА<br>К СЕБЕ</span></div>
+                    <div class="screen-book-meta"><strong>Письма к себе</strong><small>Ирина Волкова</small></div>
+                  </div>
+                  <div class="screen-book-card">
+                    <div class="cover cover-charcoal"><span>НОЧНОЙ<br>ПОЕЗД</span></div>
+                    <div class="screen-book-meta"><strong>Ночной поезд</strong><small>Даниэль Келлер</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="screen-caption">
+              <span class="screen-caption-num">01</span>
+              <div>
+                <h3>Главная / поиск</h3>
+                <p>Строка поиска по названию и автору, быстрые фильтры по жанру и году, сортировка и сетка книг с обложками.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Экран 02: Страница книги -->
+          <article class="screen-card">
+            <div class="screen-frame">
+              <div class="screen-bar">
+                <span></span><span></span><span></span>
+                <span class="screen-url">booktracker.app / книга / синяя-пора</span>
+              </div>
+              <div class="screen-body">
+                <div class="screen-nav">
+                  <span class="brand-mark" aria-hidden="true">b<span>.</span></span>
+                  <span class="screen-nav-back">← Назад к поиску</span>
+                  <span class="screen-nav-link">Моя библиотека →</span>
+                </div>
+
+                <div class="screen-book-detail">
+                  <div class="cover cover-blue book-detail-cover"><span>СИНЯЯ<br>ПОРА</span></div>
+
+                  <div class="screen-book-detail-info">
+                    <span class="screen-tag">Современная проза</span>
+                    <h3 class="screen-book-title">Синяя пора</h3>
+                    <p class="screen-book-author">Элис Хантер · 2023</p>
+                    <p class="screen-book-desc">Тихая история о лете на побережье, где прошлое и настоящее встречаются в оттенках синего. О том, как важно иногда остановиться и услышать собственный голос.</p>
+
+                    <div class="screen-field">
+                      <span class="screen-field-label">Статус чтения</span>
+                      <div class="screen-status-group">
+                        <span class="screen-filter">Хочу прочитать</span>
+                        <span class="screen-filter">Читаю</span>
+                        <span class="screen-filter active">Прочитано</span>
+                      </div>
+                    </div>
+
+                    <div class="screen-field screen-field-row">
+                      <span class="screen-field-label">Ваша оценка</span>
+                      <div class="screen-stars" aria-label="Оценка 4 из 5">
+                        <span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="filled">★</span><span class="empty">★</span>
+                      </div>
+                    </div>
+
+                    <button class="screen-cta" type="button">✓ В библиотеке</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="screen-caption">
+              <span class="screen-caption-num">02</span>
+              <div>
+                <h3>Страница книги</h3>
+                <p>Обложка, автор, год и описание, а также выбор статуса, оценка и добавление книги в личную библиотеку в один клик.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo-section section-pad" id="demo">
+      <div class="container">
+        <div class="demo-heading">
+          <div><div class="section-kicker">05 / ПОПРОБУЙТЕ</div><h2 class="section-title">Как это будет выглядеть?</em></h2></div>
+          <p class="section-description">Это демонстрационные данные. Найдите книгу или выберите статус — карточки обновятся прямо на странице.</p>
+        </div>
+        <div class="demo-panel">
+          <div class="demo-panel-head">
+            <div><span class="mini-label">BOOKTRACKER</span><h3>Моя библиотека</h3></div>
+            <div class="demo-count" aria-live="polite"><strong id="book-count">6</strong><span>книг</span></div>
+          </div>
+          <div class="demo-controls">
+            <label class="search-field"><span aria-hidden="true">⌕</span><span class="visually-hidden">Поиск по названию или автору</span><input id="book-search" type="search" placeholder="Название или автор..." autocomplete="off"></label>
+            <label class="select-field"><span class="visually-hidden">Фильтр по статусу</span><select id="status-filter"><option value="all">Все статусы</option><option value="want">Хочу прочитать</option><option value="reading">Читаю</option><option value="done">Прочитано</option></select></label>
+            <label class="select-field"><span class="visually-hidden">Сортировка книг</span><select id="sort-books"><option value="title">По названию</option><option value="rating">По оценке</option><option value="author">По автору</option></select></label>
+          </div>
+          <div class="demo-books" id="demo-books" aria-live="polite">
+            <article class="demo-book"><div class="demo-cover cover-blue"><span>СИНЯЯ<br>ПОРА</span></div><div class="demo-book-info"><span class="status status-reading">Читаю</span><h4>Синяя пора</h4><p>Элис Хантер</p><span class="demo-rating">★ 4.8</span></div></article>
+            <article class="demo-book"><div class="demo-cover cover-ochre"><span>ТИХИЙ<br>ГОРОД</span></div><div class="demo-book-info"><span class="status status-want">Хочу прочитать</span><h4>Тихий город</h4><p>Марк Леви</p><span class="demo-rating muted">Без оценки</span></div></article>
+            <article class="demo-book"><div class="demo-cover cover-green"><span>САД<br>СЛОВ</span></div><div class="demo-book-info"><span class="status status-done">Прочитано</span><h4>Сад слов</h4><p>Нацуки Каваи</p><span class="demo-rating">★ 5.0</span></div></article>
+            <article class="demo-book"><div class="demo-cover cover-plum"><span>ДАЛЬНИЙ<br>БЕРЕГ</span></div><div class="demo-book-info"><span class="status status-reading">Читаю</span><h4>Дальний берег</h4><p>Анна Рид</p><span class="demo-rating">★ 4.2</span></div></article>
+            <article class="demo-book"><div class="demo-cover cover-sand"><span>ПИСЬМА<br>К СЕБЕ</span></div><div class="demo-book-info"><span class="status status-done">Прочитано</span><h4>Письма к себе</h4><p>Ирина Волкова</p><span class="demo-rating">★ 4.6</span></div></article>
+            <article class="demo-book"><div class="demo-cover cover-charcoal"><span>НОЧНОЙ<br>ПОЕЗД</span></div><div class="demo-book-info"><span class="status status-want">Хочу прочитать</span><h4>Ночной поезд</h4><p>Даниэль Келлер</p><span class="demo-rating muted">Без оценки</span></div></article>
+          </div>
+          <p class="demo-disclaimer">* Названия, авторы и оценки в демо вымышлены и используются только для демонстрации интерфейса.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <div class="closing-decoration" aria-hidden="true">✳</div>
+        <div class="section-kicker">ИСПОЛЬЗУЙТЕ BookTracker</div>
+        <h2>Это будет ваша удобная библиотека.</h2>
+        <p>Соберите личную и сделайте чтение организованным.</p>
+        <a class="button button-light" href="#demo">Заглянуть в BookTracker <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">b<span>.</span></span><span>BookTracker</span></a>
+      <p>Персональная библиотека книг</p>
+      <span class="footer-copy">День видимого дыхания на холоде</span>
+    </div>
+  </footer>
+</body>
+</html>
